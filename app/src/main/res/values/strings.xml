@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">CalculadoraE</string>
+    <string name="action_settings">Settings</string>
+    <string name="V1">1</string>
+    <string name="V2">2</string>
+    <string name="V3">3</string>
+    <string name="V4">4</string>
+    <string name="V5">5</string>
+    <string name="V6">6</string>
+    <string name="V7">7</string>
+    <string name="V8">8</string>
+    <string name="V9">9</string>
+</resources>

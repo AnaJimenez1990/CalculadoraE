@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_calculadora"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.anagabriela.calculadorae.calculadora">
+
+    <TextView
+        android:text="0"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:id="@+id/LinearLayout3"
+        android:layout_below="@+id/LinearLayout2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <Button
+            android:text="@string/V1"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:id="@+id/button1"
+            android:layout_weight="1"
+            android:onClick="escribir (calculadora)" />
+
+        <Button
+            android:text="@string/V2"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:id="@+id/button2"
+            android:layout_weight="1"
+            android:onClick="escribir (calculadora)" />
+
+        <Button
+            android:text="@string/V3"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:id="@+id/button3"
+            android:layout_weight="1"
+            android:onClick="escribir (calculadora)" />
+
+        <Button
+            android:text="0"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:id="@+id/button0"
+            android:layout_weight="1"
+            android:onClick="escribir (calculadora)" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:id="@+id/linearLayout"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="65dp">
+
+        <Button
+            android:text="@string/V7"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:id="@+id/button7"
+            android:layout_weight="1"
+            android:onClick="escribir (calculadora)"
+            android:textAppearance="@android:style/TextAppearance.Material.Widget.Button" />
+
+        <Button
+            android:text="@string/V8"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:id="@+id/button8"
+            android:layout_weight="1"
+            android:onClick="escribir" />
+
+        <Button
+            android:text="@string/V9"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:onClick="escribir (calculadora)" />
+
+        <Button
+            android:text="="
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/buttonigual"
+            android:onClick="Calcular (calculadora)" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:layout_below="@+id/LinearLayout3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:id="@+id/linearLayout4">
+
+        <Button
+            android:text="CA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/buttonborrar"
+            android:onClick="borrar (calculadora)" />
+
+        <Button
+            android:text="-"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/buttonmenos"
+            android:layout_weight="1"
+            android:onClick="escribirsigno (calculadora)" />
+
+        <Button
+            android:text="/"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/buttonentre"
+            android:layout_weight="1"
+            android:onClick="escribirsigno (calculadora)" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/textViewResultado"
+        android:textAppearance="@android:style/TextAppearance.Material.Large"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:id="@+id/LinearLayout2"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <Button
+            android:text="@string/V4"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:id="@+id/button4"
+            android:layout_weight="1"
+            android:onClick="escribir (calculadora)" />
+
+        <Button
+            android:text="@string/V5"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:id="@+id/button5"
+            android:layout_weight="1"
+            android:onClick="escribir (calculadora)" />
+
+        <Button
+            android:text="@string/V6"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:id="@+id/button6"
+            android:layout_weight="1"
+            android:onClick="escribir (calculadora)" />
+
+        <Button
+            android:text="+"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/buttonsuma"
+            android:onClick="escribirsigno (calculadora)" />
+    </LinearLayout>
+
+</RelativeLayout>
